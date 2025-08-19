@@ -12,4 +12,5 @@ def draw():
         hei=hei-10
 def update():
     pass
+
 pgzrun.go()
