@@ -1,0 +1,10 @@
+What is the largest country in the world?,China,Canada,Russia,USA,3
+What country has the most tourists?,Spain,France,India,Australia,2
+Which country has the longest coastline?,Russia,Canada,Indonesia,Japan,2
+Which of these countries are not in Asia?,India,Thailand,Azerbaijan,Romania,4
+Which country has the highest population?,India,USA,Russia,China,1
+Beijing is the capital of which country?,Vietnam,China,India,Japan,2
+What of these countries in Europe has the highest population?,Sweden,Germany,UK,Spain,2
+Which country is shaped like a boot?,Portugal,Italy,Mexico,Brazil,2
+Which country is known as land of the rising sun?,India,China,Japan,Australia,3
+What is the smallest country in the world?,Sri Lanka,Vatican City,Maldives,Fiji,2
