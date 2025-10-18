@@ -18,6 +18,7 @@ over=False
 quest=[]
 index=0
 count=0
+var=0
 def draw():
     screen.fill("black")
     screen.draw.filled_rect(marbox,"black")
@@ -38,6 +39,9 @@ def draw():
     for i in options:
         screen.draw.textbox(question[count2].strip(),i,color="black")
         count2=count2+1
+    if over==True:
+        screen.fill("black")
+        screen.draw.text("Game over!Your score:"+str(score),(120,240),color="red",fontsize=60)
 def movebox():
     marbox.x-=3
     if marbox.right<0:
@@ -48,17 +52,34 @@ def correct():
     if len(quest)>0:
         question=readquest()
         timer=15
+    else:
+        go()
 def on_mouse_down(pos):
     ind=1
     for i in options:
         if i.collidepoint(pos):
             if ind==int(question[5]):
                 correct()
+            else:
+                go()
         ind+=1
+    if skipbox.collidepoint(pos):
+        skip()
+def skip():
+    global question,timer,var
+    if len(quest)>0 and var==0:
+        question=readquest()
+        timer=15
+        var=var+1
+def go():
+    global over
+    over=True
 def timechange():
     global timer
     if timer!=0:
         timer=timer-1
+    else:
+        go()
 #function to read the file
 def fileread():
     global count,quest
